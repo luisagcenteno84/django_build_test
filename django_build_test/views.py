@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-def hello_world(request):
- 
-    return '<h1>Hello World!!</h1>'
+def hello_world(request, name):
+    return render(request, 'hello_world.html')
